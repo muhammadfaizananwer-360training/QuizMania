@@ -1,0 +1,115 @@
+#prInfoo{
+    position: relative;
+    top: 50px;
+    margin-left: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    color:#13a89e ;
+    font-size: 13px;
+}
+
+.headerTitle{
+    background-color: #13a89e ;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+div{
+    display: block;
+}
+
+.welcomeToPage{
+    color: #ffffff;
+    font-family: "arial" , serif, serif;
+    font-size: 3.5em;
+    text-shadow: 3px 3px 1px #4a4949;
+}
+
+#logOut{
+    position: relative;
+    width: 40px;
+    height: 55px;
+    float: right;
+    top: 3px;
+    right: 70px;
+
+}
+
+#greet{
+    font-size: 2em;
+    color: #13a89e;
+}
+
+.paddind10{
+    padding: 10px;
+}
+
+.bgColorGreen{
+    background-color: #13a89e;
+    color: #ffffff;
+}
+
+.fontStyle{
+    font-size: large;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+ul, li {
+    -webkit-margin-before: 5px;
+    -webkit-margin-after: 5px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    border-radius: 5px;
+    list-style: none;
+}
+
+li:hover {
+    box-shadow: 0px 0px 10px 3px rgba(191, 191, 191, 0.75);
+    -moz-box-shadow: 0px 0px 10px 3px rgba(191, 191, 191, 0.75);
+    -webkit-box-shadow: 0px 0px 10px 3px rgba(191, 191, 191, 0.75);
+}
+
+.colorGreen{
+    color: #13a89e;
+}
+
+.floatRight{
+    float: right;
+}
+
+.joinButtonStyle {
+    color: #fff;
+    background-image: none;
+    background-color: #13a89e;
+    position: relative;
+    bottom:  5px;
+}
+
+.showButtonStyle button{
+    color: #13a89e;
+    background-image: none;
+    background-color: #ffffff;
+    position: relative;
+    bottom:  2px;
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    position: relative;
+    top: 1px;
+    right: 23px;
+}
+
+.footer{
+    position: fixed;
+    color: #0d6a62;
+    width: 100%;
+    top: 93%;
+}
+
+.footer img{
+    position: relative;
+    top: 4px;
+    left: 10px;
+}

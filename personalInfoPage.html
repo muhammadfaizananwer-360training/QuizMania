@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html ng-app="swapApp">
+
+<head>
+    <title>Quiz Mania</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="personalInfo.css" type="text/css" rel="stylesheet">
+    <link href="divs.css" type="text/css" rel="stylesheet">
+    <link href="header.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="angular.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="swapApp.js"></script>
+
+</head>
+<body>
+<div id="container" ng-app="" ng-controller="coursesDetails">
+    <h1 ng-bind="greeting" id="greet"></h1>
+    <div class="row">
+        <div class="col-md-12">
+
+            <div>
+                <div class="col-md-6">
+                    <div class="bgColorGreen fontStyle" >
+                        <span class="paddind10 ">Already Joined Courses</span>
+                    </div>
+                    <ul class="list-group colorGreen">
+                        <li class="list-group-item" ng-repeat="coursesResult in coursesSummary"> {{coursesResult.Name}}</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="bgColorGreen fontStyle showButtonStyle">
+                        <span class="paddind10 ">Course's Summary</span>
+                        <button class="btn btn-sm floatRight"  ng-click="showHide()">Show</button>
+                    </div>
+                    <ul class="list-group colorGreen">
+                        <li ng-show="hideList" class="list-group-item" ng-repeat="coursesResult in coursesSummary track by $index" >
+                            {{coursesResult.Name}} : {{coursesResult.Scored}} %
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-md-12 ">
+                <div class="bgColorGreen fontStyle">
+                    <span class="paddind10 ">Available Courses </span>
+                </div>
+                <ul class="list-group colorGreen">
+                    <li class="list-group-item" ng-repeat="courses in $root.offeredCoursesList"> {{courses}}
+                        <a ng-href="#/{{courses}}"><button class="btn btn-sm joinButtonStyle floatRight">Join</button></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/sdk.js"></script>
+<script src="jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="coursesDetail.js"></script>
+<script src="questionJS.js"></script>
+<script src="questionCSS.js"></script>
+<script src="questionHTML.js"></script>
+</body>
+</html>

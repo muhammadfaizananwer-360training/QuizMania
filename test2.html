@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html ng-app="swapApp">
+
+<head>
+    <title>Quiz Mania</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="testCSS.css" type="text/css" rel="stylesheet">
+    <link href="header.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="angular.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="swapApp.js"></script>
+</head>
+<body ng-controller="test2Controller">
+<div id="container">
+    <div id="middle">
+        <br><br>
+        <div id="testStartUp" ng-hide="flag1" >
+
+            <h1 align='center' class="heading">Begin Test</h1>
+            <br><br><br>
+            <p1> <bold>Quiz Title :</bold>  <span ng-bind="quizName"> </span><br>
+                <bold>Passing Score :</bold> 50%<br><br>
+            </p1>
+
+            <div id='readyButton1' >
+                <!--<button type="button" class="btn btn-primary" id='readyButton' ng-click="emptyTheDiv();">Primary Button</button>-->
+                <button  type="button" id='readyButton' class="btn btn-primary btn-sm"  ng-click="emptyTheDiv();" >Continue</button>
+            </div>
+        </div>
+        <div id="questionsAreaBlock" ng-show="flag1">
+            <h1 align='center' class="heading" >HTML Test</h1>
+            <form name='chk'><br>
+                <div id="questionsTextArea"> </div>
+                <input type='button' value='submit' ng-click='validate()' id='startButton'>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="coursesDetail.js"></script>
+<script src="questionJS.js"></script>
+<script src="questionCSS.js"></script>
+<script src="questionHTML.js"></script>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html  ng-app="swapApp">
+<head>
+    <title>Quiz Mania</title>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="divs.css" type="text/css" rel="stylesheet">
+    <link href="header.css" type="text/css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="angular.min.js"></script>
+    <script src="jquery.min.js"></script>
+    <link rel="stylesheet" href="font-awesome.css"/>
+    <script src="angular-route.js"></script>
+    <script src="swapApp.js"></script>
+
+</head>
+<body ng-controller="fbloginStatus">
+
+<div id="fb-root"></div>
+<div id="status"></div>
+<div class="headerHome">
+    <span id="h3">Quiz Mania</span>
+        <span id="flag" ng-show="flag">
+            <!--<button type="button" class="btn btn-default btn-xs"  ng-click="fblogin();" ></button>-->
+            <a href="#/personalInfoPage" type="button" class="btn btn-default btn-xs"></a>
+        </span>
+    </span>
+</div>
+
+<div id="bar">
+</div>
+<div id="loginPage">
+    <div id="midHome">
+        <div class="text-center welcomeToPage ">Welcome To Quiz Mania</div>
+    </div>
+    <div class="homePics" id="h11" >
+        <img src="webLogos.png" class="img-responsive">
+    </div>
+</div>
+<div id="main">
+    <div ng-view id="prInfoo"></div>
+</div>
+<div class="footer">
+    <div align="center">
+        ©2014 Quiz Mania. All rights reserved. <span id="fbContact">
+        <a href="https://www.facebook.com/mohsinkhalid11" title="Catch me on facebook" target="_blank">
+        <img src="fbContactButton.jpg"></a></span>
+    </div>
+</div>
+<script src="http://connect.facebook.net/en_US/sdk.js"></script>
+<!--<script src="http://connect.facebook.net/en_US/all.js"></script>-->
+<script src="jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="home.js"></script>
+<script src="coursesDetail.js"></script>
+<script src="questionJS.js"></script>
+<script src="questionCSS.js"></script>
+<script src="questionHTML.js"></script>
+</body>
+
+</html>
+
+
